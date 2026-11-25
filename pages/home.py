@@ -275,12 +275,7 @@ layout = html.Div(
 
                         html.Div(
                             (
-                                "Researcher A, Researcher B, "
-                                "Researcher C, et al. "
-                                "Integrated multi-omic analysis of "
-                                "skeletal muscle in peripheral artery "
-                                "disease. Journal Name. Year;Volume:"
-                                "Pages."
+                                "Coming Soon!"
                             ),
 
                             style={
