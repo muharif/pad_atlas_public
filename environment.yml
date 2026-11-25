@@ -1,0 +1,32 @@
+name: pad_atlas
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+
+  # Core data
+  - pandas=2.2
+  - numpy=2.1
+  - pyarrow=20.0.0
+
+  # Dash / plotting
+  - plotly=6
+  - dash=3
+
+  # Statistics
+  - scipy=1.15
+  - statsmodels=0.14
+
+  # Excel support
+  - openpyxl=3.1
+
+  # Useful for development
+  - jupyterlab
+  - ipykernel
+
+  # Deployment
+  - gunicorn
+
+  - pip

@@ -1,0 +1,461 @@
+/* =========================================================
+   PAD ATLAS — COMPUTATIONAL MULTI-OMICS LAB THEME
+   ========================================================= */
+
+:root {
+
+    --lab-navy: #074A7D;
+    --lab-navy-dark: #05365D;
+    --lab-blue: #0B6FA4;
+
+    --lab-cyan: #16A9D5;
+    --lab-cyan-bright: #38C4E8;
+
+    --lab-ice: #EAF6FA;
+    --lab-background: #F7FAFC;
+
+    --lab-text: #102536;
+    --lab-muted: #607483;
+
+    --lab-border: #D7E3EA;
+
+    --white: #FFFFFF;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--lab-text);
+
+    background:
+        var(--lab-background);
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 250px;
+
+    padding: 18px 16px;
+
+    background:
+        var(--white);
+
+    border-right:
+        1px solid var(--lab-border);
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+
+
+/* Sidebar links */
+
+.sidebar a {
+    font-weight: 600;
+    letter-spacing: -0.1px;
+}
+
+.sidebar summary {
+    font-weight: 700;
+}
+
+.sidebar > div:first-child {
+    font-weight: 750;
+}
+
+
+.sidebar a:hover {
+
+    background:
+        var(--lab-ice);
+
+    color:
+        var(--lab-navy-dark) !important;
+}
+
+
+/* Skeletal Muscle heading */
+
+.sidebar summary {
+
+    color:
+        var(--lab-navy-dark);
+}
+
+
+.sidebar summary:hover {
+
+    color:
+        var(--lab-cyan);
+}
+
+
+/* =========================================================
+   MAIN APP AREA
+   ========================================================= */
+
+.main-content {
+
+    margin-left: 250px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    height: 235px;
+    padding: 34px 40px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(5, 54, 93, 0.92) 0%,
+            rgba(7, 74, 125, 0.78) 45%,
+            rgba(22, 169, 213, 0.38) 100%
+        ),
+        url("/assets/header.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Very subtle network-like lines */
+
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+}
+
+
+.hero-title {
+
+    margin: 0;
+
+    font-size: 52px;
+
+    line-height: 1;
+
+    font-weight: 750;
+
+    letter-spacing: -1px;
+
+    color:
+        var(--white);
+}
+
+
+.hero-subtitle {
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+
+    max-width: 700px;
+
+    color:
+        rgba(255,255,255,0.92);
+}
+
+
+/* =========================================================
+   HERO CHIPS
+   ========================================================= */
+
+.hero-chips {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 21px;
+}
+
+
+.hero-chip {
+
+    background:
+        rgba(255,255,255,0.94);
+
+    color:
+        var(--lab-navy-dark);
+
+    border:
+        1px solid rgba(255,255,255,0.35);
+
+    border-radius:
+        999px;
+
+    padding:
+        8px 14px;
+
+    font-size:
+        13px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(0,0,0,0.08);
+}
+
+
+.hero-chip strong {
+
+    color:
+        var(--lab-cyan);
+
+    margin-right:
+        3px;
+}
+
+
+/* Placeholder label */
+
+.hero-image-placeholder {
+
+    position: absolute;
+
+    right: 26px;
+
+    bottom: 14px;
+
+    z-index: 2;
+
+    font-size: 10px;
+
+    color:
+        rgba(255,255,255,0.42);
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.08em;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.page-content {
+
+    padding:
+        34px 40px 60px 40px;
+
+    max-width:
+        1500px;
+
+    box-sizing:
+        border-box;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.page-content h1 {
+
+    color:
+        var(--lab-navy-dark);
+}
+
+
+.page-content h2,
+.page-content h3 {
+
+    color:
+        var(--lab-text);
+}
+
+
+/* =========================================================
+   GENERIC CARDS
+   ========================================================= */
+
+.page-content > div {
+
+    box-sizing:
+        border-box;
+}
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+.dash-table-container a {
+    color: var(--lab-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dash-table-container a:hover {
+    color: var(--lab-cyan);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   DROPDOWNS
+   ========================================================= */
+
+.Select-control {
+
+    border-color:
+        var(--lab-border) !important;
+}
+
+
+.Select-control:hover {
+
+    border-color:
+        var(--lab-cyan) !important;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.dash-table-container {
+
+    border-radius:
+        8px;
+
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+
+    color:
+        var(--lab-blue);
+}
+
+
+a:hover {
+
+    color:
+        var(--lab-cyan);
+}
+
+
+/* =========================================================
+   SCROLLBAR — SIDEBAR
+   ========================================================= */
+
+.sidebar::-webkit-scrollbar {
+
+    width: 6px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+
+    background:
+        var(--lab-border);
+
+    border-radius:
+        10px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+
+    background:
+        var(--lab-cyan);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+
+        width:
+            210px;
+    }
+
+
+    .main-content {
+
+        margin-left:
+            210px;
+    }
+
+
+    .hero {
+
+        height:
+            210px;
+
+        padding:
+            0 30px;
+    }
+
+
+    .hero-title {
+
+        font-size:
+            42px;
+    }
+
+
+    .page-content {
+
+        padding:
+            26px;
+    }
+}
